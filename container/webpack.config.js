@@ -27,7 +27,7 @@ plugins : [
                 payments_list: 'payments_list@http://localhost:3001/remoteEntry.js',
                 static_pages : 'static_pages@http://localhost:3002/remoteEntry.js'
             },
-            shared : ['react', 'react-dom']
+            shared : ['react', 'react-dom', 'css-loader', 'ts-loader']
         }
         )
     ],
