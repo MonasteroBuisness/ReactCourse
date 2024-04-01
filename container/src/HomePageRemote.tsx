@@ -2,7 +2,7 @@ import { useEffect, useRef } from 'react';
 import mount from 'static_pages/HomePage'
 import { User } from './App';
 
-type HomePageProps = {user : User}
+type HomePageProps = {user : User, logout: () => void}
 
 const HomePageRemote = (props: HomePageProps) : JSX.Element => {
 

@@ -8,7 +8,7 @@ function App() {
   return (
     <div >
       <h1>This is the static pages site</h1>
-      <HomePage user = {{id :1, name : "test"}} />
+      <HomePage user = {{id :1, name : "test"}} logout={() => {}} />
       <PageNotFound />
     </div>
   );

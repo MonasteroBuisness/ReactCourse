@@ -29,7 +29,7 @@ function App() {
       <button onClick={handleLogin}>Login or out</button>
       <Routes>
         <Route path="/list" element = {<TransactionsRemote />} />
-        <Route path="/" element = {<HomePageRemote user={user} />} />
+        <Route path="/" element = {<HomePageRemote user={user} logout={handleLogin} />} />
         <Route path="*" element = {<PageNotFoundRemote />} />
       </Routes>
       </BrowserRouter>
