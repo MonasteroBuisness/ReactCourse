@@ -1,12 +1,15 @@
 import { useEffect, useRef } from 'react';
 import mount from 'static_pages/HomePage'
+import { User } from './App';
 
-const HomePageRemote = () : JSX.Element => {
+type HomePageProps = {user : User}
+
+const HomePageRemote = (props: HomePageProps) : JSX.Element => {
 
     const homepage = useRef<HTMLDivElement>(null);
 
     useEffect( () => {
-        mount(homepage.current)
+        mount(homepage.current, props)
     } , [])
 
 

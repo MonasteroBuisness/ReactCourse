@@ -1,10 +1,10 @@
 import ReactDOM from 'react-dom/client'
-import HomePage from './HomePage';
+import HomePage, { HomePageProps } from './HomePage';
 
-const mount = (el: Element) : void => {
+const mount = (el: Element, props : HomePageProps) : void => {
 
     const root : ReactDOM.Root = ReactDOM.createRoot(el);
-    root.render(<HomePage />)
+    root.render(<HomePage {...props} />)
 }
 
 export default mount;
