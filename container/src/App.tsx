@@ -17,8 +17,6 @@ function App() {
         <Route path="/" element = {<HomePageRemote />} />
         <Route path="*" element = {<PageNotFoundRemote />} />
       </Routes>
-    
-    
       </BrowserRouter>
     </div>
   );
