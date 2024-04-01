@@ -6,7 +6,7 @@ import Transactions from './Transactions';
 function App() {
   return (
     <div><h1>This is the payments list micro app</h1>
-      <Transactions />
+      <Transactions serverUrl='http://somewhere.com'/>
     </div>
   );
 }

@@ -1,10 +1,10 @@
-import Transactions from "./Transactions";
+import Transactions, { TransactionsProps } from "./Transactions";
 import ReactDOM from 'react-dom/client';
 
-const mount = (el : Element) : void => {
+const mount = (el : Element, props: TransactionsProps) : void => {
 
     const root :ReactDOM.Root = ReactDOM.createRoot(el);
-    root.render(<Transactions />);
+    root.render(<Transactions {...props} />);
 
 }
 export default mount;
